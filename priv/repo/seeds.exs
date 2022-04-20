@@ -9,3 +9,8 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias Graphql2.Blog.Post
+alias Graphql2.Repo
+
+%Post{name: "Damaris", description: "Description damaris"}|> Repo.insert!

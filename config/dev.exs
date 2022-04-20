@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :graphql_2, Graphql2.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "rut",
+  password: "qwerasdz",
   hostname: "localhost",
   database: "graphql_2_dev",
   show_sensitive_data_on_connection_error: true,

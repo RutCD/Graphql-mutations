@@ -20,6 +20,10 @@ defmodule Graphql2Web.Router do
     get "/", PageController, :index
   end
 
+    scope "graphiql" do
+      forward "/", Absinthe.Plug.GraphiQL,
+      schema: Graphql2Web.Schema
+    end
   # Other scopes may use custom stacks.
   # scope "/api", Graphql2Web do
   #   pipe_through :api
